@@ -1,0 +1,1211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>main_screen</class>
+ <widget class="QWidget" name="main_screen">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1366</width>
+    <height>745</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Gloucester MT Extra Condensed</family>
+    <pointsize>22</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>LibraryX</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:#CBE6C7;</string>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>200</width>
+     <height>745</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:#122C4F;</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QPushButton" name="update_book">
+    <property name="geometry">
+     <rect>
+      <x>25</x>
+      <y>125</y>
+      <width>150</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Gloucester MT Extra Condensed</family>
+      <pointsize>16</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #CBE6C7;
+    color: #122C4F;
+    border-radius: 5px;
+}
+
+QPushButton:hover {
+    background-color: #AAD6A4;
+}
+
+QPushButton:pressed {
+    background-color: #9ACE92;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Update/Delete Book</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="view_book">
+    <property name="geometry">
+     <rect>
+      <x>25</x>
+      <y>85</y>
+      <width>150</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Gloucester MT Extra Condensed</family>
+      <pointsize>16</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #CBE6C7;
+    color: #122C4F;
+    border-radius: 5px;
+}
+
+QPushButton:hover {
+    background-color: #AAD6A4;
+}
+
+QPushButton:pressed {
+    background-color: #9ACE92;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>View Book</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="add_book">
+    <property name="geometry">
+     <rect>
+      <x>25</x>
+      <y>45</y>
+      <width>150</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Gloucester MT Extra Condensed</family>
+      <pointsize>16</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #CBE6C7;
+    color: #122C4F;
+    border-radius: 5px;
+}
+
+QPushButton:hover {
+    background-color: #AAD6A4;
+}
+
+QPushButton:pressed {
+    background-color: #9ACE92;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Add Book</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>40</y>
+      <width>200</width>
+      <height>2</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>80</y>
+      <width>200</width>
+      <height>2</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_3">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>120</y>
+      <width>200</width>
+      <height>2</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_4">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>160</y>
+      <width>200</width>
+      <height>2</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_5">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>200</y>
+      <width>200</width>
+      <height>2</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="view_member">
+    <property name="geometry">
+     <rect>
+      <x>25</x>
+      <y>205</y>
+      <width>150</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Gloucester MT Extra Condensed</family>
+      <pointsize>16</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #CBE6C7;
+    color: #122C4F;
+    border-radius: 5px;
+}
+
+QPushButton:hover {
+    background-color: #AAD6A4;
+}
+
+QPushButton:pressed {
+    background-color: #9ACE92;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>View Member</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="update_member">
+    <property name="geometry">
+     <rect>
+      <x>25</x>
+      <y>245</y>
+      <width>150</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Gloucester MT Extra Condensed</family>
+      <pointsize>16</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #CBE6C7;
+    color: #122C4F;
+    border-radius: 5px;
+}
+
+QPushButton:hover {
+    background-color: #AAD6A4;
+}
+
+QPushButton:pressed {
+    background-color: #9ACE92;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Update/Delete Member</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="add_member">
+    <property name="geometry">
+     <rect>
+      <x>25</x>
+      <y>165</y>
+      <width>150</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Gloucester MT Extra Condensed</family>
+      <pointsize>16</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #CBE6C7;
+    color: #122C4F;
+    border-radius: 5px;
+}
+
+QPushButton:hover {
+    background-color: #AAD6A4;
+}
+
+QPushButton:pressed {
+    background-color: #9ACE92;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Add Member</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line_6">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>240</y>
+      <width>200</width>
+      <height>2</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_7">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>280</y>
+      <width>200</width>
+      <height>2</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_8">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>320</y>
+      <width>200</width>
+      <height>2</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="return_book">
+    <property name="geometry">
+     <rect>
+      <x>25</x>
+      <y>325</y>
+      <width>150</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Gloucester MT Extra Condensed</family>
+      <pointsize>16</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #CBE6C7;
+    color: #122C4F;
+    border-radius: 5px;
+}
+
+QPushButton:hover {
+    background-color: #AAD6A4;
+}
+
+QPushButton:pressed {
+    background-color: #9ACE92;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Return Book</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="issue_book">
+    <property name="geometry">
+     <rect>
+      <x>25</x>
+      <y>285</y>
+      <width>150</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Gloucester MT Extra Condensed</family>
+      <pointsize>16</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #CBE6C7;
+    color: #122C4F;
+    border-radius: 5px;
+}
+
+QPushButton:hover {
+    background-color: #AAD6A4;
+}
+
+QPushButton:pressed {
+    background-color: #9ACE92;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Issue Book</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line_9">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>400</y>
+      <width>200</width>
+      <height>2</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_10">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>360</y>
+      <width>200</width>
+      <height>2</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="view_returned_book">
+    <property name="geometry">
+     <rect>
+      <x>25</x>
+      <y>405</y>
+      <width>150</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Gloucester MT Extra Condensed</family>
+      <pointsize>16</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #CBE6C7;
+    color: #122C4F;
+    border-radius: 5px;
+}
+
+QPushButton:hover {
+    background-color: #AAD6A4;
+}
+
+QPushButton:pressed {
+    background-color: #9ACE92;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>View Returned Books</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="view_overdue_book">
+    <property name="geometry">
+     <rect>
+      <x>25</x>
+      <y>445</y>
+      <width>150</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Gloucester MT Extra Condensed</family>
+      <pointsize>16</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #CBE6C7;
+    color: #122C4F;
+    border-radius: 5px;
+}
+
+QPushButton:hover {
+    background-color: #AAD6A4;
+}
+
+QPushButton:pressed {
+    background-color: #9ACE92;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>View Overdue Books</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="view_issued_book">
+    <property name="geometry">
+     <rect>
+      <x>25</x>
+      <y>365</y>
+      <width>150</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Gloucester MT Extra Condensed</family>
+      <pointsize>16</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #CBE6C7;
+    color: #122C4F;
+    border-radius: 5px;
+}
+
+QPushButton:hover {
+    background-color: #AAD6A4;
+}
+
+QPushButton:pressed {
+    background-color: #9ACE92;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>View Issued Books</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="view_fine_history_button">
+    <property name="geometry">
+     <rect>
+      <x>25</x>
+      <y>485</y>
+      <width>150</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Gloucester MT Extra Condensed</family>
+      <pointsize>16</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #CBE6C7;
+    color: #122C4F;
+    border-radius: 5px;
+}
+
+QPushButton:hover {
+    background-color: #AAD6A4;
+}
+
+QPushButton:pressed {
+    background-color: #9ACE92;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>View Fine History</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="change_password_button">
+    <property name="geometry">
+     <rect>
+      <x>25</x>
+      <y>525</y>
+      <width>150</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Gloucester MT Extra Condensed</family>
+      <pointsize>16</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #CBE6C7;
+    color: #122C4F;
+    border-radius: 5px;
+}
+
+QPushButton:hover {
+    background-color: #AAD6A4;
+}
+
+QPushButton:pressed {
+    background-color: #9ACE92;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Change Password</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="logout_button">
+    <property name="geometry">
+     <rect>
+      <x>25</x>
+      <y>565</y>
+      <width>150</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Gloucester MT Extra Condensed</family>
+      <pointsize>16</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #CBE6C7;
+    color: #122C4F;
+    border-radius: 5px;
+}
+
+QPushButton:hover {
+    background-color: #AAD6A4;
+}
+
+QPushButton:pressed {
+    background-color: #9ACE92;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Logout</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line_21">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>840</y>
+      <width>200</width>
+      <height>2</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_23">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>440</y>
+      <width>200</width>
+      <height>2</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_24">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>480</y>
+      <width>200</width>
+      <height>2</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_25">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>800</y>
+      <width>200</width>
+      <height>2</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_26">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>520</y>
+      <width>200</width>
+      <height>2</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_27">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>560</y>
+      <width>200</width>
+      <height>2</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_28">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>780</y>
+      <width>200</width>
+      <height>2</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_29">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>600</y>
+      <width>200</width>
+      <height>2</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>200</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Gloucester MT Extra Condensed</family>
+      <pointsize>20</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#122C4F;
+color:#CBE6C7;</string>
+    </property>
+    <property name="text">
+     <string>LibraryX</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="frame_2">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>0</y>
+     <width>1166</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:#122C4F;</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>583</x>
+      <y>7</y>
+      <width>85</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Gloucester MT Extra Condensed</family>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#122C4F;
+color:#CBE6C7;</string>
+    </property>
+    <property name="text">
+     <string>WELCOME</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label_1">
+   <property name="geometry">
+    <rect>
+     <x>332</x>
+     <y>195</y>
+     <width>200</width>
+     <height>100</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Gloucester MT Extra Condensed</family>
+     <pointsize>18</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+     <underline>true</underline>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:#122C4F;
+color:#CBE6C7;
+border-radius:10px;</string>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;Total Books&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignHCenter|Qt::AlignTop</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>664</x>
+     <y>195</y>
+     <width>200</width>
+     <height>100</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Gloucester MT Extra Condensed</family>
+     <pointsize>18</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+     <underline>true</underline>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:#122C4F;
+color:#CBE6C7;
+border-radius:10px;</string>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;Available Books&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignHCenter|Qt::AlignTop</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>996</x>
+     <y>195</y>
+     <width>200</width>
+     <height>100</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Gloucester MT Extra Condensed</family>
+     <pointsize>18</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+     <underline>true</underline>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:#122C4F;
+color:#CBE6C7;
+border-radius:10px;</string>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;Issued Books&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignHCenter|Qt::AlignTop</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>332</x>
+     <y>450</y>
+     <width>200</width>
+     <height>100</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Gloucester MT Extra Condensed</family>
+     <pointsize>18</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+     <underline>true</underline>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:#122C4F;
+color:#CBE6C7;
+border-radius:10px;</string>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;Total Members&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignHCenter|Qt::AlignTop</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>996</x>
+     <y>450</y>
+     <width>200</width>
+     <height>100</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Gloucester MT Extra Condensed</family>
+     <pointsize>18</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+     <underline>true</underline>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:#122C4F;
+color:#CBE6C7;
+border-radius:10px;</string>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;Overdue Books&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignHCenter|Qt::AlignTop</set>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame_3">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>705</y>
+     <width>1166</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:#122C4F;</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame_4">
+   <property name="geometry">
+    <rect>
+     <x>1326</x>
+     <y>0</y>
+     <width>40</width>
+     <height>745</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:#122C4F;</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="total_book_count">
+   <property name="geometry">
+    <rect>
+     <x>402</x>
+     <y>250</y>
+     <width>60</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Gloucester MT Extra Condensed</family>
+     <pointsize>22</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:#122C4F;
+color:#CBE6C7;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="total_member_count">
+   <property name="geometry">
+    <rect>
+     <x>402</x>
+     <y>505</y>
+     <width>60</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Gloucester MT Extra Condensed</family>
+     <pointsize>22</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:#122C4F;
+color:#CBE6C7;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="available_book_count">
+   <property name="geometry">
+    <rect>
+     <x>734</x>
+     <y>250</y>
+     <width>60</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Gloucester MT Extra Condensed</family>
+     <pointsize>22</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:#122C4F;
+color:#CBE6C7;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="issued_book_count">
+   <property name="geometry">
+    <rect>
+     <x>1066</x>
+     <y>250</y>
+     <width>60</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Gloucester MT Extra Condensed</family>
+     <pointsize>22</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:#122C4F;
+color:#CBE6C7;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="overdue_book_count">
+   <property name="geometry">
+    <rect>
+     <x>1066</x>
+     <y>505</y>
+     <width>60</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Gloucester MT Extra Condensed</family>
+     <pointsize>22</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:#122C4F;
+color:#CBE6C7;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>664</x>
+     <y>400</y>
+     <width>200</width>
+     <height>200</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>logo2.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

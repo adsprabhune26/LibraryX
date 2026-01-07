@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>return_book_ui</class>
+ <widget class="QDialog" name="return_book_ui">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>260</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Return Book</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:#CBE6C7;</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>400</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Gloucester MT Extra Condensed</family>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:#122C4F;
+color:#CBE6C7;</string>
+   </property>
+   <property name="text">
+    <string>RETURN BOOK</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>155</x>
+     <y>40</y>
+     <width>90</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Gloucester MT Extra Condensed</family>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:#122C4F;</string>
+   </property>
+   <property name="text">
+    <string>Enter Issue ID :</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="issue_id_entry">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>80</y>
+     <width>120</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Gloucester MT Extra Condensed</family>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:#122C4F;
+border-radius:10px;
+border: 1px solid #122C4F;</string>
+   </property>
+   <property name="inputMask">
+    <string/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="return_button">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>115</y>
+     <width>80</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Gloucester MT Extra Condensed</family>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: #122C4F;
+	border: 1px solid #000000;
+    color: #CBE6C7;
+    border-radius: 5px;
+}
+
+QPushButton:hover {
+    background-color: #0D203A;
+}
+
+QPushButton:pressed {
+    background-color: #091525;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Return Book</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="fine_label">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>160</y>
+     <width>200</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Gloucester MT Extra Condensed</family>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:#122C4F;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="confirm_button">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>200</y>
+     <width>100</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Gloucester MT Extra Condensed</family>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: #122C4F;
+	border: 1px solid #000000;
+    color: #CBE6C7;
+    border-radius: 5px;
+}
+
+QPushButton:hover {
+    background-color: #0D203A;
+}
+
+QPushButton:pressed {
+    background-color: #091525;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Confirm Return</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

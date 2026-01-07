@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>view_book_ui</class>
+ <widget class="QDialog" name="view_book_ui">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>View Book</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:#CBE6C7;</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>500</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Gloucester MT Extra Condensed</family>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:#122C4F;
+color:#CBE6C7;</string>
+   </property>
+   <property name="text">
+    <string>VIEW BOOK</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>227</x>
+     <y>40</y>
+     <width>45</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Gloucester MT Extra Condensed</family>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:#122C4F</string>
+   </property>
+   <property name="text">
+    <string>Search</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="search_entry">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>65</y>
+     <width>200</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Gloucester MT Extra Condensed</family>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:#122C4F;
+border-radius:10px;
+border: 1px solid #122C4F;</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="book_data_table">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>105</y>
+     <width>460</width>
+     <height>375</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Gloucester MT Extra Condensed</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTableWidget {
+    background-color: #CBE6C7;
+    color: #122C4F;
+    gridline-color: #122C4F;
+}
+
+QHeaderView::section {
+    background-color: #CBE6C7;
+    color: #122C4F;
+    padding: 4px;
+}
+
+QTableCornerButton::section {
+    background-color: #CBE6C7;
+}
+
+QAbstractScrollArea::corner {
+    background: #CBE6C7;
+}
+</string>
+   </property>
+   <attribute name="verticalHeaderVisible">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
